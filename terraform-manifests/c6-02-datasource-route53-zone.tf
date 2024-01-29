@@ -1,7 +1,7 @@
 # Get DNS information from AWS Route53
-data "aws_route53_zone" "mydomain" {
+/*data "aws_route53_zone" "mydomain" {
   name         = "devopsincloud.com"
-}
+}*/
 resource "aws_route53_record" "mcittest" {
   zone_id = aws_route53_zone.primary.zone_id
   name    = "www.mcitdevops.com"
